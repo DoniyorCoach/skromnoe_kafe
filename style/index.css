@@ -141,6 +141,10 @@ button:hover {
     font-weight: 600;
 }
 
+.rubl {
+    display: none;
+}
+
 @media (min-width: 1600px){
     .module-window div {
         font-size: 22px;

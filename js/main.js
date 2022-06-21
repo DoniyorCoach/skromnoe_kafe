@@ -9,6 +9,7 @@ let orderList = document.querySelector('.orderList');
 let totalCost = document.querySelector('.totalCost');
 let sale = document.querySelector('.sale');
 let container = document.querySelector('.container');
+let rublSimbol = document.querySelector('.rubl');
 
 //2
 let price = [369,349,189,179,299,149,199];
@@ -42,7 +43,7 @@ document.addEventListener('click', function(event) {
             kassaScore -= price[Number(checkboxValue)];
         }
     }
-    kassa.textContent = kassaScore + " ₽";
+    kassa.textContent = kassaScore + " " + rublSimbol.textContent; 
 })
 
 
@@ -52,7 +53,7 @@ btn.addEventListener('click', function() {
         if(inputs[i].checked) {
             moduleWindow.style.display = 'block';
             let nameProduct = inputs[i].nextElementSibling.textContent;
-            orderList.innerHTML += `<b>${nameProduct}</b>:  <i>${price[i]} ₽</i><br>`;
+            orderList.innerHTML += `<b>${nameProduct}</b>:  <i>${price[i]} ${rublSimbol.textContent}</i><br>`;
             orderCounter++;
         }
     }
