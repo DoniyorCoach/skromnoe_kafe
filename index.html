@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скромное кафе</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="shortcut icon" href="./image/1.jpg">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Сделайте заказ</h1>
+        <section>
+            <div class="left-section">
+                <form>
+                    <div>
+                        <input type="checkbox" value="0" id="product1">
+                        <label for="product1">Фаршированная форель</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="1" id="product2">
+                        <label for="product2">Телятина под соусом</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="2" id="product3">
+                        <label for="product3">Крем-суп из шампиньонов</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="3" id="product4">
+                        <label for="product4">Рулет со шпинатом</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="4" id="product5">
+                        <label for="product5">Пицца Гавайская</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="5" id="product6">
+                        <label for="product6">Ванильный коктейль</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="6" id="product7">
+                        <label for="product7">Напиток Грейпфрут</label>
+                    </div>
+                </form>
+            </div>
+            <div class="right-section">
+                <img class="menu" src="./image/menu.jpg" alt="меню">
+            </div>
+        </section>
+        <div>
+            <label for="kassa">Счёт</label>
+            <textarea id="kassa" cols="15" rows="1" disabled>0</textarea>
+        </div>
+        <button class="btn">Заказать</button>
+    </div>
+
+    <div class="module-window">
+        <div class="closeBtn">X</div>
+        <div class="module-container">
+            <h2>Ваш заказ</h2>
+            <div class="orderList"></div>
+            <div class="totalCost"></div>
+            <div class="sale"></div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

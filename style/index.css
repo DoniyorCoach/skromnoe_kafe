@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 500px;
+    margin: 130px auto;
+    border-radius: 8px;
+    border: 2px solid pink;
+}
+
+section {
+    display: flex;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.left-section {
+    width: 55%;
+}
+input {
+    margin-left: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
+div {
+    line-height: 35px;
+}
+
+label[for="kassa"] {
+    margin-left: 30px;
+}
+
+textarea {
+    margin-left: 15px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 18px;
+    resize: none;
+    padding-bottom: 4px;
+}
+
+button {
+    display: block;
+    width: 140px;
+    height: 30px;
+    font-size: 19px;
+    background-color: greenyellow;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    border: 1px solid red;
+    background-color: #fff;
+    transition: all .2s;
+}
+
+.menu {
+    margin-top: 30px;
+    width: 200px;
+    background: none;
+}
+
+.closeBtn {
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 2px 10px;
+    font-size: 30px;
+    float: right;
+    color: red;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.closeBtn:hover {
+    border-color: red;
+}
+
+.module-window {
+    display: none;
+    position: absolute;
+    background-color: rgb(238, 230, 230);
+    width: 30%;
+    top: 10%;
+    left: 35%;
+    right: 35%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.module-window h2 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: yellowgreen;
+    margin-bottom: 20px;
+}
+
+.module-container {
+    width: 90%;
+    padding: 10px;
+    line-height: 60px;
+    margin: 15px auto;
+}
+
+.orderList {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.totalCost {
+    margin-top: 40px;
+    font-size: 19px;
+    font-weight: 600;
+    color: green;
+}
+
+.sale {
+    font-size: 20px;
+    color: red;
+    font-weight: 600;
+}
+
+@media (min-width: 1600px){
+    .module-window div {
+        font-size: 22px;
+    }
+    .module-window h2 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 1100px){
+    .module-window  {
+        width: 50%; 
+        left: 25%;
+        right: 25%;
+    }
+    .module-window h2 {
+        font-size: 30px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+
+    .container {
+        margin: 100px auto;
+    }
+}
+
+@media (max-width: 750px){
+    .module-window  {
+        width: 60%;
+        left: 20%;
+        right: 20%; 
+    }
+    .module-window div {
+        font-size: 15px;
+    }
+    .module-window h2 {
+        font-size: 25px;
+    }
+
+    textarea {
+        font-size: 12px;
+    }
+
+    .container {
+        margin: 90px auto;
+    }
+}
+
+@media (max-width: 570px){
+    .container {
+        width: 400px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+    
+    .menu {
+        margin-top: 40px;
+        width: 170px;
+    }
+
+    .module-window  {
+        width: 80%;
+        left: 10%;
+        right: 10%; 
+    }
+    .module-window div {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px){
+    .container {
+        width: 350px;
+    }
+
+    label {
+        font-size: 11px;
+    }
+    
+    .menu {
+        margin-top: 40px;
+        width: 130px;
+    }
+    
+    .module-window  {
+        width: 86%;
+        left: 7%;
+        right: 7%; 
+    }
+    .module-window div {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 350px){
+    .container {
+        width: 300px;
+    }
+
+    label {
+        font-size: 10px;
+    }
+    
+    .menu {
+        margin-top: 70px;
+        width: 100px;
+    }
+    
+    .module-window  {
+        width: 86%;
+        left: 7%;
+        right: 7%; 
+    }
+    .module-window div {
+        font-size: 13px;
+    }
+}
